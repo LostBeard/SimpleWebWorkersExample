@@ -15,7 +15,7 @@ SimpleWebWorkersExample.csproj
 ...
 ```
 
-### Add services
+### Add services and run BlazorJSRunAsync()
 Program.cs  
 ```cs
 using Microsoft.AspNetCore.Components.Web;
@@ -39,8 +39,10 @@ await builder.Build().BlazorJSRunAsync();
 ```
 
 ### Use WebWorkerService
-Home.razor
-```razor
+<details>
+<summary>Home.razor</summary>
+
+```razor  
 @page "/"
 @using SpawnDev.BlazorJS
 @using SpawnDev.BlazorJS.WebWorkers
@@ -141,3 +143,4 @@ Home.razor
     }
 }
 ```
+</details>
