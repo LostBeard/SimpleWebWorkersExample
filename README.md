@@ -1,5 +1,6 @@
 # SimpleWebWorkersExample
 [SimpleWebWorkersExample](https://github.com/LostBeard/SimpleWebWorkersExample)  is a simple C# Blazor WebAssembly project that demonstrates how to use [SpawnDev.BlazorJS.WebWorkers](https://github.com/LostBeard/SpawnDev.BlazorJS.WebWorkers) to run a cancellable background task in a WebWorker.  
+  
 [Live Demo](https://lostbeard.github.io/SimpleWebWorkersExample/)  
 
 Below are the modfied files in a `Blazor WebAssembly Standalone App` template.
