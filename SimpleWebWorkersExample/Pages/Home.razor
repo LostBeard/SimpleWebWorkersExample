@@ -72,7 +72,7 @@
     /// </summary>
     /// <param name="maxRunTimeMS">callback to report progress to the caller</param>
     /// <param name="progressCallback">callback to report status messages to the caller</param>
-    /// <param name="token"></param>
+    /// <param name="token">A CancellationToken used to indicate if the method should cancel work</param>
     /// <returns>Returns true if the method was cancelled</returns>
     private static async Task<bool> CancellableMethod([FromServices] BlazorJSRuntime JS, double maxRunTimeMS, Action<int> progressCallback, Action<string> logCallback, CancellationToken token)
     {
