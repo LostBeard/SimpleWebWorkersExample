@@ -25,11 +25,11 @@ jobs:
 
     # publishes Blazor project to the publish-folder
     - name: Publish .NET Core Project
-      run: dotnet publish ./BlazorServiceWorkerCultureTest/BlazorServiceWorkerCultureTest.csproj --nologo -c:Release --output publish
+      run: dotnet publish ./SimpleWebWorkersExample/SimpleWebWorkersExample.csproj --nologo -c:Release --output publish
 
-    # changes the base-tag in index.html from '/' to '/BlazorServiceWorkerCultureTest/' to match GitHub Pages repository subdirectory
-    - name: Change base-tag in index.html from / to /BlazorServiceWorkerCultureTest/
-      run: sed -i 's/<base href="\/"/<base href="\/BlazorServiceWorkerCultureTest\/"/g' publish/wwwroot/index.html
+    # changes the base-tag in index.html from '/' to '/SimpleWebWorkersExample/' to match GitHub Pages repository subdirectory
+    - name: Change base-tag in index.html from / to /SimpleWebWorkersExample/
+      run: sed -i 's/<base href="\/"/<base href="\/SimpleWebWorkersExample\/"/g' publish/wwwroot/index.html
     
     # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
