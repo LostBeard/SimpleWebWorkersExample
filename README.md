@@ -88,7 +88,7 @@ Home.razor
         // call method in a web worker using TaskPool
         var cancelled = await WebWorkerService.TaskPool.Run(() => CancellableMethod(null!, maxRunTimeMS, ProgressCallbackTask, LogCallback, token));
         log.Add($"StartBackgroundTask returned cancelled: '{cancelled}' to scope: {JS.GlobalScope.ToString()}");
-        cancellationTokenSource?.Dispose();
+        cancellationTokenSource.Dispose();
         cancellationTokenSource = null;
     }
     /// <summary>
