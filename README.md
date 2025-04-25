@@ -101,9 +101,9 @@ Home.razor
         StateHasChanged();
     }
     /// <summary>
-    /// This method will be called by the
+    /// This method will be called by the web worker scope and run in the window scope
     /// </summary>
-    /// <param name="msg"></param>
+    /// <param name="msg">log message</param>
     void LogCallback(string msg)
     {
         log.Add(msg);
@@ -112,10 +112,10 @@ Home.razor
     /// <summary>
     /// This method will run in a web worker
     /// </summary>
-    /// <param name="maxRunTimeMS"></param>
-    /// <param name="progressCallback"></param>
+    /// <param name="maxRunTimeMS">callback to report progress to the caller</param>
+    /// <param name="progressCallback">callback to report status messages to the caller</param>
     /// <param name="token"></param>
-    /// <returns></returns>
+    /// <returns>Returns true if the method was cancelled</returns>
     private static async Task<bool> CancellableMethod([FromServices] BlazorJSRuntime JS, double maxRunTimeMS, Action<int> progressCallback, Action<string> logCallback, CancellationToken token)
     {
         logCallback($"CancellableMethod called in scope: {JS.GlobalScope.ToString()}");
