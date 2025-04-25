@@ -3,7 +3,7 @@
   
 [Live Demo](https://lostbeard.github.io/SimpleWebWorkersExample/)  
 
-Below are the modfied files in a `Blazor WebAssembly Standalone App` template.
+Below are the modifications to a `Blazor WebAssembly Standalone App` template.
 
 ### Add SpawnDev.BlazorJS.WebWorkers reference
 SimpleWebWorkersExample.csproj
