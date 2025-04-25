@@ -2,7 +2,7 @@
 
 This is a simple C# Blazor WebAssembly project that demonstrates how to use [SpawnDev.BlazorJS.WebWorkers](https://github.com/LostBeard/SpawnDev.BlazorJS.WebWorkers) to run a background task.
 
-Below are the modfied files in `Blazor WebAssembly Standalone App` template.
+Below are the modfied files in a `Blazor WebAssembly Standalone App` template.
 
 ### Add SpawnDev.BlazorJS.WebWorkers reference
 SimpleWebWorkersExample.csproj
